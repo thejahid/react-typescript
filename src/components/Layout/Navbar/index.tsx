@@ -23,8 +23,8 @@ export const Navbar: React.FC<Props> = ({ toggleTheme }) => {
           height={14}
           width={30}
           handleDiameter={20}
-          offColor={colors.secondary}
-          onColor={colors.primary}
+          offColor={colors.text}
+          onColor={colors.text}
         />
       </NavbarContent>
     </NavbarWrapper>
