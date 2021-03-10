@@ -1,17 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     :root {
-  /* ------------------------- color ------------------------- */
-  --primaryColor: #394e5d;
-  --white: #fff;
-  --jaggedIce: #badae5;
-  --black: #000;
-  --grey: #ddd;
-  --orange: orange;
-
   /* ------------------------- box shadow & border, border-radius ------------------------- */
-  --borderOne: 1px solid #ddd;
+  --borderOne: 1px solid ${({ theme }) => theme.colors.text};
   --borderRadiousOne: 5px;
 
   /* ------------------------- font size ------------------------- */
@@ -36,11 +28,11 @@ const GlobalStyles = createGlobalStyle`
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  color: var(--primaryColor);
+  color: ${({ theme }) => theme.colors.text};
   font-weight: var(--normal);
   line-height: 1;
   min-height: 100vh;
-  background: var(--jaggedIce);
+  background: ${({ theme }) => theme.colors.background};
 }
 ol,
 ul {
@@ -49,11 +41,11 @@ ul {
 a {
   text-decoration: none;
   display: inline-block;
-  color: var(--primaryColor);
+  color: ${({ theme }) => theme.colors.text};
 }
 :focus {
   outline: none;
 }
 `;
 
-export default GlobalStyles;
+export default GlobalStyle;
