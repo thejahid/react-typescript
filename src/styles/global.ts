@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
   --bold: 700;
   /* ------------------------- transition ------------------------- */
   --defaultTransition: 0.3s;
+
+  /* ------------------------- Adjust Menu ------------------------- */
+  --menuHeight: 60px;
+
 }
 
 /* ------------------------- common css ------------------------- */
